@@ -1,0 +1,9 @@
+To do list:
+
+- Create the login page 
+-  Create the API
+- create the Recptor protcol from the api and then hash the password
+- Create the query form / connector 
+- Create a validation test
+- Create two SQL tables in one database *for now* (Done)
+
