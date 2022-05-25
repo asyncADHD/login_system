@@ -1,23 +1,15 @@
-import hashlib
+import bcrypt
+import time 
+import pandas as pd 
+
+passwd = b"password1"
+salt = b'$2b$12$iUFOYlJy0O9pCIOH9nrD8O'
+hashed_passwd = bcrypt.hashpw(passwd, salt)
+
+print (hashed_passwd)
+print (salt)
 
 
-
-# Output: 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
-
-
-string="pad"
-encoded=string.encode()
-result = hashlib.sha256(encoded)
-print("String : ", end ="")
-print(string)
-print("Hash Value : ", end ="")
-print(result)
-print("Hexadecimal equivalent: ",result.hexdigest())
-print("Digest Size : ", end ="")
-print(result.digest_size)
-print("Block Size : ", end ="")
-print(result.block_size)
-
-
-
-print (len(result.digest()))
+b'$2b$12$iUFOYlJy0O9pCIOH9nrD8O'
+b'$2b$12$iUFOYlJy0O9pCIOH9nrD8OLUcFvHzL6VjH7M20JdGd5Z09iaimng2'
+b'$2b$12$iUFOYlJy0O9pCIOH9nrD8OLUcFvHzL6VjH7M20JdGd5Z09iaimng2'
