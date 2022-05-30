@@ -1,9 +1,9 @@
-from curses.textpad import Textbox
+
 import tkinter as tk 
 from tkinter import *
 from PIL import Image, ImageTk
 from requests import delete
-from sympy import root
+
 import matplotlib.pyplot as plt
 import numpy as np
 from math import log, sqrt, pi, exp
@@ -79,7 +79,8 @@ number_of_simulations_entry_box = tk.Entry(root, width=18, fg="grey")
 number_of_simulations_entry_box.grid(row=6, column=1, padx=10, pady=(10,0))
 
 # Display the placeholder image 
-img = Image.open('/Users/callumthomas/Desktop/GIT_Repos/login_system/GBM_graph.png')
+img = Image.open(r'C:\Users\44786\Desktop\GIT_REPOS\login_system\GBM_GRAPH.png') 
+
 test = ImageTk.PhotoImage(img)
 
 

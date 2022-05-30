@@ -11,3 +11,9 @@ CREATE TABLE `login_sys`.`user_data_main` (
 
 
 created First table, I intend to use the user name as a forign key to identify the user. As this will allow me to create privilages for the user asfter the validation stage on the program. 
+
+
+
+- SQL command to clear all the test submitions 
+
+delete from login_sys.login_data where UserName like "%test%";
