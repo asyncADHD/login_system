@@ -10,7 +10,12 @@ from math import log, sqrt, pi, exp
 import pandas as pd 
 from scipy.stats import norm
 
+'''passwd = b"password1"
+salt = b'$2b$12$iUFOYlJy0O9pCIOH9nrD8O'
+hashed_passwd = bcrypt.hashpw(passwd, salt)
 
+print (hashed_passwd)
+print (salt)'''
 
 root = tk.Tk()
 
