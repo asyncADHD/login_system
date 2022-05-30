@@ -5,7 +5,7 @@ import mysql.connector
 mydb = mysql.connector.connect(
     host = 'localhost',
     user = 'root',
-    passwd = 'sys1',
+    passwd = 'sys12345', # password for mac is sys12345, pass for windows is sys1
     database = 'login_sys'
 )
 print (mydb)
