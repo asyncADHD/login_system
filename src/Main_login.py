@@ -48,7 +48,7 @@ def query_DB_signed_up():
     for row in mycursor.fetchall():
         print(row)
     
-    
+   
 def login_button():
     User_Name = U_name.get()
     User_Password = password.get()
@@ -111,4 +111,3 @@ admin_btn.grid(row=5, column=0, columnspan=2, pady=2, padx=2, ipadx=10)
 
 
 root.mainloop()
-
